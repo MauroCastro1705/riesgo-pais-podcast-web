@@ -1,6 +1,25 @@
 * {margin: 0; padding: 0;}
-body {background-color: white;
-         font-family: sans-serif;}
+
+.wrapper {
+     width: 100%;
+     height: 100%; 
+     background: lightcoral; 
+     font-family: 'Raleway', sans-serif;
+     }
+
+/********************FONTS***************/
+
+.fontGeneral {
+        font-family: 'Raleway', sans-serif;
+}
+
+.fontNav{
+        font-family: 'Blinker', sans-serif;  }
+
+
+/******************FRAME******************/
+
+body {background-color: white;}
 
 #header {background-color:whitesmoke;
          height: 200px;
@@ -14,28 +33,90 @@ body {background-color: white;
         max-height: 180px;
         margin-top: 10px        
 }
-
-#navegacion {background-color:darkred ;
-                 height: 100px;
-                width: 100%;
-                float: left; }
+ /****************NAV**********************/
+#navegacion {
+        background-color:darkred ;
+        height: 80px;
+        width: 100%;
+        float: left;
+        }
 
 .botones{font-size: 20px; 
         text-decoration: none;
-        color: lightgray;
-         font-weight: 800; 
+        color: lightgray; 
         list-style: none;
         display: flex; 
         margin: 0 auto; 
-        padding-top: 20px; }
+        padding-top: 20px;
+        font-family: 'Blinker', sans-serif; }
+
+.botones ul{
+        margin: none;
+}
 
 
 .botones li a {
         color:white;
         text-decoration: none;
-        background: black;
         display: block;
-        padding: 13px; 
+        padding: 10px; 
         margin-left: 25px;}
 
 .botones li a:hover {color: red}
+
+/**********************MEDIO*************/
+
+.medio{
+        width: 80%;
+        height: 800px;
+        background: whitesmoke;
+        margin: 0 auto;
+        padding: 30px;
+       
+}
+
+.colIzq{
+        background: lightblue;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 65%;
+        float: left;
+        padding: 5px;
+}
+.colDer {
+        background: lightcoral;
+        width: 26%;
+        float: right;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 5px;
+}
+
+/********************* BANNER ***********************/
+
+.banner {
+        background: lightsalmon;
+        width: 75%;
+        height: 200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(3, 20px);
+
+}
+ .banner ul {
+         margin: 0; }
+.banner li {
+        list-style: none;
+}
+
+.banner li a {
+        text-decoration: none;
+}
+
+.cards {
+        background: lightgoldenrodyellow;
+        margin: 0 auto;
+        width: 200px;
+        height: 150px;
+        text-align: center;
+}
